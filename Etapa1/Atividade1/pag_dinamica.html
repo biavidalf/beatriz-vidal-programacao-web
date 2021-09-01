@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>  
+<html>
+  <head>
+  <meta charset="utf-8"/>
+    <style>
+      /** Css formatação geral **/
+      body{
+        font-family: 'Arial, Helvetica, sans-serif';
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        }
+        a:visited{
+            color: white;
+        }
+      #principal{
+        background-color: #f2f2f2;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        width: 50%;
+        text-align: center;
+      }
+      /** Navbar **/
+      #navbar{
+        width: 230px;
+        margin: 0 auto;
+        line-height: 30px;
+        text-align: center;
+        background-color: black;
+        font-weight: bold;
+        color: white;
+      }
+
+    </style>
+  </head>
+
+  <body>  
+
+    <div id="navbar">
+      <a href="index.html">Estatica</a> |
+      <a href="pag_dinamica.html">Dinamica</a>
+    </div>
+    
+    <div id="principal"> <!-- Principal -->
+      <form method="get" action="exPhpForm.php">  
+        
+        Nome: <input type="text" name="txNome" >
+        <br><br>
+
+        Sexo:<br>
+        <input type="radio" name="rdSexo" value="mulher.jpeg"><img src="mulher.jpeg" alt="Girl" width="250" height="150"><br>
+
+        <input type="radio" name="rdSexo" value="homem.jpeg"><img src="homem.jpeg" alt="boy" width="250" height="150"><br>
+      
+
+      <br><br>
+
+      
+        E-mail: <input type="text" name="txEmail">
+        <br><br>
+
+        Website: <input type="text" name="txWebsite"> 
+        <br><br>
+
+        Comentário<br>
+        <textarea name="txAreaComentario" rows="4" cols="40">
+        </textarea>
+        <br><br>
+
+        <input type="submit" name="btnEnviar" value="Enviar">
+
+      </form>
+    </div> <!-- Fim Principal -->
+
+  </body>
+
+</html>

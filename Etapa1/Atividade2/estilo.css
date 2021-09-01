@@ -1,0 +1,90 @@
+/********** FORMATAÇÕES INICIAIS **********/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    line-height: 26px;
+}
+
+/********** BARRA DE NAVEGAÇÃO **********/
+#navbar table{
+    background-color: red;
+    color: black;
+    width: 260px;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+#navbar th{
+    padding: 20px 15px;
+    text-align: left;
+    font-size: 1.5em;
+    cursor: default;
+}
+#navbar td{
+    font-weight: bold;
+    padding: 10px 35px;
+}
+#navbar td a:hover{
+    font-size: 1.2em;
+    color: white;
+    font-weight: bolder;
+}
+
+.ret{
+    position: absolute;
+    width: 294px;
+    height: 1024px;
+    left: 0px;
+    top: -24px;
+
+    background: #FF0404;
+}
+
+/********** MAIN: CONTEUDO PRINCIPAL **********/
+#main{
+    margin-left: 400px;
+    margin-top: 60px;
+    width: 700px;
+}
+#main p{
+    margin-left: 5px;
+}
+#main a{
+    text-decoration: underline;
+    font-size: 0.8em;
+    color: red;
+
+}
+
+
+/** LOJAS RECOMENDADAS **/
+#main #lista a{
+    color: black;
+    font-size: 1.0em;
+    text-decoration: none;
+}
+#main #lista a:hover{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#main #lista li{
+    padding: 10px 2px;
+    list-style-type: square;
+}
+
+/** EMAIL **/
+#main h3{
+    margin: 0;
+}
+input[type=text]{
+    width: 300px;
+    padding: 12px 20px;
+    margin-top: 5px;
+}

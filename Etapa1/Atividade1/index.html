@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatriz Vidal</title>
+    <style>
+        /** Css formatação geral **/
+        body{
+            font-family: 'Arial, Helvetica, sans-serif';
+        }
+        a{
+        text-decoration: none;
+        color: white;
+        }
+        a:visited{
+            color: white;
+        }
+        #principal{
+            background-color: #f2f2f2;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            width: 70%;
+            text-align: center;
+        }
+        img{
+            width: 150px;
+        }
+
+        /** Navbar **/
+        #navbar{
+            width: 230px;
+            margin: 0 auto;
+            line-height: 30px;
+            text-align: center;
+            background-color: black;
+            font-weight: bold;
+            color: white;
+        }
+
+        /** Css formatação tabela **/
+        #escola {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+              
+        #escola td, #escola th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .nome{
+            width: 30%;
+        }
+        
+        #escola th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="index.html">Estatica</a> |
+        <a href="pag_dinamica.html">Dinamica</a>
+    </div>
+
+    <div id="principal"> <!-- Principal -->
+        
+        <h1> Publicar Página Estática </h1>
+        <p>
+            Atividade da cadeira de Programação Web do IFCE Campus Fortaleza, turma 2018.1, atual P8
+        </p>
+        <hr>
+        <p>
+            <span style="text-decoration:underline">Aluna</span>:<br> Beatriz Vidal Freire<br>
+            <br>
+            <span style="text-decoration:underline">Tema escolhido</span>:<br> Como o tema da atividade é
+            livre, decidi mostrar as escolas que já estudei!
+        </p>
+
+        <div> <!-- Tabela -->
+
+            <table id="escola">
+                <tr>
+                  <th class="nome">Escola</th>
+                  <th>Imagem</th>
+                </tr>
+                <tr>
+                  <td>São Judas Tadeu (PE)</td>
+                  <td><img src="saojudas.png"></td>
+                </tr>
+                <tr>
+                  <td>Christus Benfica (CE)</td>
+                  <td><img src="christus.png"></td>
+                </tr>
+                <tr>
+                  <td>IFCE</td>
+                  <td><img src="ifce.png"></td>
+                </tr>
+              </table>
+
+        </div> <!-- Fim Tabela -->
+
+    </div> <!-- Fim Principal -->
+
+</body>
+</html>
