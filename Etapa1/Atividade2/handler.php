@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Beatriz V. | Site Simples</title>
+        <title>Beatriz V. | Formulário</title>
 
         <link rel="stylesheet" href="estilo.css">
         <script src="https://kit.fontawesome.com/df07cb0f03.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
+
         <div id="navbar" class="ret"> <!-- BARRA DE NAVEGAÇÃO -->
 
             <table> <!-- TABELA NAVBAR -->
@@ -40,21 +40,29 @@
 
             </table> <!-- FIM TABELA NAVBAR -->
 
-            <!-- <button type="button" onclick='document.getElementById("navbar").className = "retgreen"'>Mudar fundo!</button> -->
-
         </div> <!-- FIM BARRA DE NAVEGAÇÃO -->
 
         <div id="main"> <!-- CONTEUDO PRINCIPAL -->
 
-            <h1>Airsoft Brasileiro</h1>
+            <h1>Formulario enviado com sucesso</h1>
             <p>
-                Airsoft é um dos esportes que vem mais crescendo no Brasil.
-                Não sabe qual esporte é esse? Clique em Airsoft na nossa barra de navegação 
-                à esquerda ou em saiba mais! <a href="airsoft.html">Saiba mais!</a>
+                <h3>Dados:</h3> 
+                <?php
+                    // Pegando as variaveis recebidas do form recomendacoes.html
+                    $nome = $_GET['nome'];
+                    $email = $_GET['email'];
+                    $telefone = $_GET['telefone'];
+                    $estado = $_GET['estado'];
+
+                    echo "<ul><li>  <strong> Nome enviado:     </strong> ".$nome;
+                    echo "</li><li> <strong> Email enviado:    </strong>".$email;
+                    echo "</li><li> <strong> Telefone enviado: </strong> ".$telefone;
+                    echo "</li><li> <strong> Estado enviado:   </strong> ".$estado;
+                    echo "</li></ul>";
+                ?>
             </p> 
-            <img src="brasil.png" width="600px">
 
         </div> <!-- FIM CONTEUDO PRINCIPAL -->
-
+        
     </body>
 </html>

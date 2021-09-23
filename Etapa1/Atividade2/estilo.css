@@ -46,6 +46,16 @@ p{
     background: #FF0404;
 }
 
+#retgreen{
+    position: absolute;
+    width: 294px;
+    height: 1024px;
+    left: 0px;
+    top: -24px;
+
+    background: #7edf00;
+}
+
 /********** MAIN: CONTEUDO PRINCIPAL **********/
 #main{
     margin-left: 400px;
@@ -64,19 +74,23 @@ p{
 
 
 /** LOJAS RECOMENDADAS **/
-#main #lista a{
-    color: black;
+#lista a{
+    color: red;
     font-size: 1.0em;
     text-decoration: none;
 }
-#main #lista a:hover{
-    color: red;
+#lista a:hover{
+    color: rgb(145, 0, 0);
     font-weight: bold;
     text-decoration: underline;
 }
-#main #lista li{
+#lista li{
     padding: 10px 2px;
     list-style-type: square;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
 }
 
 /** EMAIL **/
@@ -84,7 +98,36 @@ p{
     margin: 0;
 }
 input[type=text]{
-    width: 300px;
-    padding: 12px 20px;
+    width: 250px;
+    padding: 8px 16px;
     margin-top: 5px;
+}
+
+.botao{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top:5px;
+    width: 90px;
+}
+
+.botao:hover{
+    background: rgb(145, 0, 0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+label{
+    font-size: 0.9em;
+}
+
+li{
+    margin-bottom: 5px;
+    list-style-type: square;
 }

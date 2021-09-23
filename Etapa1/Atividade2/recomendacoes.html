@@ -61,13 +61,41 @@
                 </li>
             </ul>
 
-            <h3>Quer continuar recebendo indicações e novidades?</h1>
-            <p class="recomendacao">
-                <form>
-                    <Label>Deixe seu email para contato:<br></Label>
-                    <input type="text" placeholder="example@domain.com">
-                </form>
-            </p>
+            <h3>
+                [<span style="color:red">RECURSO EXTRA</span> - FORM INPUT TEXT]<br>
+                
+                Quer continuar recebendo indicações e novidades? Deixe suas informações para contato!
+            </h3>
+                <p class="recomendacao">
+                    <form method="GET" action="handler.php">
+                        <Label>Nome:<br></Label>
+                        <input type="text" name="nome" placeholder="Nome Sobrenome"><br>
+
+                        <Label>Email:<br></Label>
+                        <input type="text" name="email" placeholder="example@domain.com"><br>
+
+                        <Label>Telefone:<br></Label>
+                        <input type="text" name="telefone" placeholder="(XX)9 XXXX-XXXX"><br>
+
+                        <Label>Estado:<br></Label>
+                        <input type="text" name="estado" placeholder="Seu estado"><br>
+
+                        <button class="botao" type="submit" name="submit">Enviar</button>
+                    </form>
+                </p>                
+
+        <!-- <button type="button" onclick='document.body.style.backgroundColor = "black"; document.body.style.color = "white";'>Mudar fundo!</button> -->
+
+        <h3>Elemento Javascript:</h3>
+
+        <button onclick="myFunction()"><i class="fas fa-adjust"></i></button>
+
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
 
         </div> <!-- FIM CONTEUDO PRINCIPAL -->
 
